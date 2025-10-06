@@ -1,0 +1,28 @@
+version: 1
+project:
+  github: https://github.com/evidencepub/docs-author
+  numbering:
+    headings: false
+    title: false
+  open_access: true
+  license: CC-BY-4.0
+  abbreviations:
+    MyST: Markedly Structured Markdown
+  resources:
+    - content/figure1.ipynb
+    - content/figure2.ipynb
+  toc:
+    - file: index.md
+    - file: ./content/example.md
+      children:
+        - file: ./content/example_sub.md
+site:
+  template: book-theme
+  title: Authoring Docs
+  options:
+    favicon: favicon.ico
+    logo: logo.svg
+    logo_text: Guide for Authors
+    style: ./css/footer.css
+  parts:
+    footer: footer.md
