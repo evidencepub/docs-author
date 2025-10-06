@@ -10,13 +10,20 @@ project:
     MyST: Markedly Structured Markdown
   toc:
     - file: index.md
-    - file: ./content/kinds.md
+    - file: ./content/kinds/kinds_root.md
       children:
-        - file: ./content/kind_abstract_summary.md
-        - file: ./content/kind_abstract.md
-        - file: ./content/kind_interactive.md
-        - file: ./content/kind_computational.md
-        - file: ./content/kind_dashboard.md
+        - file: ./content/kinds/kind_abstract_summary.md
+        - file: ./content/kinds/kind_abstract.md
+        - file: ./content/kinds/kind_interactive.md
+        - file: ./content/kinds/kind_computational.md
+        - file: ./content/kinds/kind_dashboard.md
+    - file: ./content/prepare/prep_root.md
+      children:
+        - file: ./content/prepare/prep_abstract.md
+        - file: ./content/prepare/prep_code.md
+        - file: ./content/prepare/prep_notebook.md
+        - file: ./content/prepare/prep_citation.md
+        - file: ./content/prepare/prep_submission.md
 site:
   template: book-theme
   title: Authoring Docs
