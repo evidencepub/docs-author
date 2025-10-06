@@ -11,41 +11,13 @@ body {
   flex-direction: column;
 }
 
-.py-6{
-  padding-bottom: 0px;
-  padding-top: 3px;
-}
 
 a.button, cite.button a {
   background-color: #6f00b7;
   color: #37cae2;
 }
 
-.py-20{
-  padding-top: 5px;
-}
 
-.myst-grid{
-  margin-top: 0px;
-}
-
-.myst-card-header{
-  background-color: #394459;
-  color: aliceblue;
-  text-align: center;
-}
-
-
-.mt-6{
-  margin-top: 5px;
-}
-
-@media (min-width: 640px) {
-  .sm\:py-28 {
-      padding-top: 10px;
-      padding-bottom: 1rem;
-  }
-}
 
 .article.content {
   /* Override 100vh from myst-theme:styles/typography.css so content div

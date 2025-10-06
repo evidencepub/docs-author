@@ -8,14 +8,15 @@ project:
   license: CC-BY-4.0
   abbreviations:
     MyST: Markedly Structured Markdown
-  resources:
-    - content/figure1.ipynb
-    - content/figure2.ipynb
   toc:
     - file: index.md
-    - file: ./content/example.md
+    - file: ./content/kinds.md
       children:
-        - file: ./content/example_sub.md
+        - file: ./content/kind_abstract_summary.md
+        - file: ./content/kind_abstract.md
+        - file: ./content/kind_interactive.md
+        - file: ./content/kind_computational.md
+        - file: ./content/kind_dashboard.md
 site:
   template: book-theme
   title: Authoring Docs
