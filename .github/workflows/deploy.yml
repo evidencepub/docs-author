@@ -38,8 +38,8 @@ jobs:
         run: npm install -g mystmd
       - name: Build HTML Assets
         run: myst build --html
-      # - name: Add CNAME
-      #   run: echo "author.evidencepub.io" > _build/html/CNAME
+      - name: Add CNAME
+        run: echo "author.evidencepub.io" > _build/html/CNAME
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
