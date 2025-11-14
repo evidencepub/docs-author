@@ -8,22 +8,34 @@ project:
   license: CC-BY-4.0
   abbreviations:
     MyST: Markedly Structured Markdown
+    EONS: Evidence ONline Services
+    EDS: Evidence Data Storage
+    REES: Reproducible Execution Environment Specification
   toc:
     - file: index.md
-    - file: ./content/kinds/kinds_root.md
+    - title: Preparing a preprint
       children:
-        - file: ./content/kinds/kind_abstract_summary.md
-        - file: ./content/kinds/kind_abstract.md
-        - file: ./content/kinds/kind_interactive.md
-        - file: ./content/kinds/kind_computational.md
-        - file: ./content/kinds/kind_dashboard.md
-    - file: ./content/prepare/prep_root.md
+        - file: ./content/prepare/prepare.md
+        - title: Kinds of Evidence
+          children:
+          - file: ./content/prepare/prose-only-preprint.md
+            title: Prose-Only Preprint
+          - file: ./content/prepare/interactive-preprint.md
+          - file: ./content/prepare/computational-preprint.md
+          - file: ./content/prepare/wired-preprint.md
+          - file: ./content/prepare/prep_submission.md
+    - file: ./content/data/data.md
       children:
-        - file: ./content/prepare/prep_abstract.md
-        - file: ./content/prepare/prep_code.md
-        - file: ./content/prepare/prep_notebook.md
-        - file: ./content/prepare/prep_citation.md
-        - file: ./content/prepare/prep_submission.md
+        - file: ./content/data/datalad.md
+        - file: ./content/data/figshare.md
+        - file: ./content/data/gdrive.md
+        - file: ./content/data/osf.md
+        - file: ./content/data/zenodo.md
+    - file: ./content/eons/eons.md
+      children:
+        - file: ./content/eons/dashboards.md
+        - file: ./content/eons/evidence-frame.md
+        - file: ./content/eons/others.md
 site:
   template: book-theme
   title: Authoring Docs

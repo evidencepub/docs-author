@@ -11,6 +11,9 @@ body {
   flex-direction: column;
 }
 
+.custom-bg{
+  background-color: #1a1a1a;
+}
 
 a.button, cite.button a {
   background-color: #6f00b7;
